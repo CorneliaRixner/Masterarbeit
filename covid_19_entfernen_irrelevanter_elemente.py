@@ -2,8 +2,8 @@ import pandas as pd
 import re
 
 # Dateipfad anpassen
-input_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_reddit_knaggle_prepared_3.csv"
-output_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_reddit_knaggle_cleaned_with_date.csv"
+input_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_knaggle_prepared_3.csv"
+output_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_knaggle_cleaned_with_date.csv"
 
 # CSV einlesen
 df = pd.read_csv(input_file)
@@ -30,3 +30,4 @@ df['comment_body_clean'] = df['comment_body'].apply(clean_text)
 # Nur die gewünschten Spalten exportieren
 df[['comment_date', 'post_title_clean', 'comment_body_clean']].to_csv(output_file, index=False)
 print("Bereinigte Datei gespeichert unter:", output_file)
+
