@@ -7,7 +7,7 @@ tokenizer = RobertaTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-se
 model = RobertaForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 
 # Eingabedatei und Ausgabedatei
-input_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_knaggle_cleaned_with_date_2.csv"
+input_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_knaggle_cleaned_with_date.csv"
 output_file = r"C:\Users\conri\Documents\FIT Master\5. Semester\Masterarbeit\03_Datensätze\Reddit-Beiträge\Covid 19\covid_19_knaggle_sentiment.csv"
 
 # CSV einlesen
