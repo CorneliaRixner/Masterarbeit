@@ -4,10 +4,10 @@ from datetime import datetime
 
 reddit = praw.Reddit(
     client_id="hP_YOcCuQdPjeBon4705Wg",
-    client_secret="np11AHHbdEnR_2Vj8_avn0jymiH3Fw",
-    user_agent="Mein MA-Scraper by Funkelchen1996",
-    username="Funkelchen1996",
-    password="FiT_2022!"
+    client_secret="xxx", #client_secret bleibt geheim
+    user_agent="Mein MA-Scraper by xxx", #Name des user_agent wird abgeändert, damit keiner den Zugang der Autorin nutzen kann
+    username="xxx", #Der Username wird ersetzt, damit keiner den Zugang der Autorin nutzen kann
+    password="xxx" #Das Passwort wird ersetzt, damit keiner den Zugang der Autorin nutzen kann
 )
 
 search_queries = [
@@ -51,7 +51,7 @@ posts_df = pd.DataFrame(posts_data).drop_duplicates(subset='id')
 
 print(f'Anzahl der gesammelten Beiträge: {len(posts_df)}')
 
-posts_df.to_csv('overwatch2_reddit_data_update_perks.csv', index=False)
-print("Scraping abgeschlossen. Daten in 'overwatch2_reddit_data_update_perks.csv' gespeichert.")
+posts_df.to_csv('overwatch2_reddit_data_final_vorbereitet.csv', index=False)
+print("Scraping abgeschlossen. Daten in 'overwatch2_reddit_data_final_vorbereitet.csv' gespeichert.")
 
 
