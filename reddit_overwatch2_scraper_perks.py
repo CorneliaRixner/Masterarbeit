@@ -51,7 +51,7 @@ posts_df = pd.DataFrame(posts_data).drop_duplicates(subset='id')
 
 print(f'Anzahl der gesammelten Beiträge: {len(posts_df)}')
 
-posts_df.to_csv('overwatch2_reddit_data_final_vorbereitet.csv', index=False)
-print("Scraping abgeschlossen. Daten in 'overwatch2_reddit_data_final_vorbereitet.csv' gespeichert.")
+posts_df.to_csv('overwatch2_reddit_data_update_perks.csv', index=False)
+print("Scraping abgeschlossen. Daten in 'overwatch2_reddit_data_update_perks.csv' gespeichert.")
 
 
